@@ -140,9 +140,11 @@ export function Examen() {
                     </div>
                   )  
                 })}
-                {enviado===false &&
-                <button className="btn" onClick={onsubmit}>enviar</button>}
-                {enviado===true && <p>examen enviado.....</p>}
+                {enviado===false ? 
+                (<button className="btn" onClick={onsubmit}>enviar</button>):
+                <p>examen enviado.....</p>
+                }
+                
             
         </form>
       </section>
